@@ -1,0 +1,149 @@
+/* .App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.logo{
+  height: 20%;
+  width: 10%;
+}
+
+.navbar,
+.nav-list{
+  display: flex;
+  justify-content: space-between;
+} */
+
+
+*,
+*:before,
+*:after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+form,
+form *{
+	display: flex;
+}
+
+form{
+	background: #3f51b5;
+	flex-direction: column;
+	padding-top: 25px;
+	width: 400px;
+	height: 330px;
+	color: #fff;
+	position: relative;
+}
+
+h3{
+	align-self: center;
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+
+.input_wrapper{
+	width: 250px;
+	align-self: center;
+	flex-direction: column;
+	position: relative;
+	margin-bottom: 25px;
+	height: 64px;
+}
+
+.input_wrapper label{
+	font-size: 13px;
+	position: absolute;
+	width: 100%;
+	top: 65%;
+	transition: all .35s;
+}
+
+.input_wrapper input{
+	height: 3px;
+	border: 0;
+	border-radius: 3px;
+	box-shadow: 0 0 1px 2px rgba(0,0,0,.2);
+	padding: 0 15px;
+	font-family: 'Montserrat', sans-serif;
+	outline: 0;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	transition: all .35s;
+}
+
+.input_wrapper.open label{
+	top: 4px;
+	font-size: 9px;
+}
+
+.input_wrapper.open input{
+	height: 45px;
+}
+
+.forgot_password{
+	width: 250px;
+	align-self: center;
+	justify-content: flex-end;
+}
+
+.forgot_password a{
+	font-size: 12px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.submit{
+	height: 45px;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	color: #fff;
+	background: #324192;
+	outline: 0;
+	border: 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	cursor: pointer;
+	text-decoration: none;
+	transition: all .35s;
+}
